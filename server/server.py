@@ -1,7 +1,5 @@
-import os
 from server.config import Config
-from flask import Flask, render_template, request, flash, redirect, Response
-from werkzeug.exceptions import BadRequestKeyError
+from flask import Flask, render_template, request, redirect, Response
 from src import *
 
 from .pages.index_logic import teams

@@ -27,7 +27,6 @@ class ProcessingSystem(object):
             self.rating_simulation.input["two_field_goals_percentage"] = player[14]
             self.rating_simulation.input["free_throws"] = player[16]
             self.rating_simulation.input["free_throws_attempts"] = player[17]
-            #self.rating_simulation.input["free_throws_percentage"] = player[18]
             self.rating_simulation.input["offensive_rebounds"] = player[19]
             self.rating_simulation.input["defensive_rebounds"] = player[20]
             self.rating_simulation.input["total_rebounds"] = player[21]
