@@ -14,6 +14,8 @@ class DataProcessing(object):
             csv_reader = csv.reader(file)
             next(csv_reader)  # Пропускаем заголовки
             for row in csv_reader:
+                if not all([True if len(i) > 0 else False for i in row]):
+                    continue
                 self._data.append(
                     [
                         int(row[0]),
