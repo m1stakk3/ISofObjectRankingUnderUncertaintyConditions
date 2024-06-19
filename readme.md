@@ -16,12 +16,35 @@
 Подход с использованием fuzzy нейросети (нечеткая логика) должен помочь совершить обезличенный выбор, без человеческого фактора и случайных временных колебаний показателей игроков по ходу игрового сезона.
 ```
 ## Окружение
-* Python 3.11+ (на MacOS желателен запуск под 3.11)
 * Возможность кроссплатформенного запуска (Windows, Linux, MacOS)
+* Python 3.11+ (на MacOS желателен запуск под 3.11)
 * Flask web server для GUI через браузер
 
 ---
 
+## Как запустить?
+* в папке с программой вызвать CMD и создать виртуальное окружение:
+```commandline
+python -m venv venv
+```
+* активировать виртуальное окружение:
+  * на Windows:
+      ```commandline
+      venv\Scripts\activate
+      ```
+  * на Unix
+    ```commandline
+    source venv/bin/activate
+    ```
+* установить зависимости
+```commandline
+python -m pip install -r requirements.txt
+```
+* запустить программу
+```commandline
+python main.py
+```
+---
 ### Источник данных
 
 https://www.basketball-reference.com/teams/
